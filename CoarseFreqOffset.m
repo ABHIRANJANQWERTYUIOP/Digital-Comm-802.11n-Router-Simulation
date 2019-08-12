@@ -11,7 +11,7 @@ end
 pts=floor(0.8*10^-6/dt);
 x=x(i-pts+1:i);
 
-pts=floor(0.8*10^-6/2/dt);
+pts=floor(0.7*10^-6/2/dt);
 
 z=sum(x(1:pts).*conj(x(pts+1:2*pts)));
 freqoffset=angle(z)/(-2*pi*pts*dt);
